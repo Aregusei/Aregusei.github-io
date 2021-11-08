@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ryndin lb3</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+   <script src="script.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <img src="" alt="">
+      </div>
+
+<div>
+    <a href="#" onclick="menuOpen()">Открыть изображение</a>
+
+<div style="display: none" id="menu_area" >    
+    
+    <a href="#" onclick="imgOpen()">Открыть первое изображение</a>
+    <br>
+
+    <a href="#" onclick="imgOpen1()">Открыть второе изображение</a>
+    <br>
+
+    <a href="#" onclick="imgOpen2()">Открыть третье изображение</a>
+    
+    <br>
+
+    <a href="#" onclick="AltImg()">Отобразить альтернативный текст</a>
+    <br>
+
+<br>
+    <img src="images/sf4ik.jpg" alt="img" id="img_area" style="display: none">
+    <img src="images/torkel.jpg" alt="img" id="img_area" style="display: none">
+    <img src="images/spirit.png" alt="img" id="img_area" style="display: none">
+ 
+
+</div>
+    
+</div>
+      
+
+</div>
+<div style="display: block;  margin-right: auto;">
+    <p><input id="width" type="range" min="300" max="500" step="5" value="300" oninput="changeWidth()"></p>
+    <p><input id="height" type="range" min="300" max="500" step="5" value="300" oninput="changeHeight()"></p> 
+    <p><input id="border" type="range" min="0" max="8" step="1" value="0" oninput="changeBorder()"></p>
+</div>
+
+
+<input id="altimg" type="text" placeholder = "alt для рисунка" name="name">
+  <button id="apply" onclick="applied()">Подтвердить</button>
+    
+   
+    
+    
+</body>
+</html>
